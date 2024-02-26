@@ -1,4 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿/*
+   This repository class manages database operations related to the Product entity.
+   It extends RepositoryBase<Product> and implements the IProductRepository interface.
+
+   The repository provides methods for:
+   - Retrieving a paginated list of products.
+   - Getting the total count of products.
+   - Retrieving a specific product by its ID.
+
+   The methods use Entity Framework Core for database operations.
+*/
+
+using Microsoft.EntityFrameworkCore;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Repository;
 using eCommerce.Infrastructure.Context;

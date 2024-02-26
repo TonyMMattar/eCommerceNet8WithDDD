@@ -1,4 +1,22 @@
-﻿using eCommerce.Domain.Entities;
+﻿/*
+   This service class implements business logic related to products.
+   It utilizes a repository (IProductRepository) for data access operations.
+
+   Key Features:
+   - Methods for retrieving a paginated list of products and getting the total count of products.
+   - CRUD operations for adding, updating, and deleting products.
+   - Validation of business rules before saving or updating products.
+
+   Business Rules Validation:
+   - Ensures the product ID is valid for updates.
+   - Ensures the product name is not empty or null.
+
+   Note:
+   - Business rule validation is demonstrated with the ValidateToSave method.
+   - The SaveChangesAsync method is provided by the repository for saving changes to the database.
+*/
+
+using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Repository;
 using eCommerce.Domain.Interfaces.Services;
 using System;

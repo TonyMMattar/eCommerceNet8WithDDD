@@ -1,4 +1,22 @@
-﻿using eCommerce.Domain.Entities;
+﻿/*
+   This service class implements business logic related to users.
+   It utilizes a repository (IUserRepository) for data access operations.
+
+   Key Features:
+   - Methods for retrieving a list of users, getting a specific user by ID, and authenticating user credentials.
+   - CRUD operations for adding, updating, and deleting users.
+   - Validation of business rules before saving or updating users.
+
+   Business Rules Validation:
+   - Ensures the user ID is valid for updates.
+   - Ensures the user email is not empty or null.
+
+   Note:
+   - Business rule validation with the ValidateToSave method.
+   - The SaveChangesAsync method is provided by the repository for saving changes to the database.
+*/
+
+using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Repository;
 using eCommerce.Domain.Interfaces.Services;
 using System;

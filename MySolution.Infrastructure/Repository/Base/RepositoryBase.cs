@@ -1,4 +1,19 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿/*
+   This abstract base class serves as a generic repository for database operations.
+   It utilizes Entity Framework Core for data access.
+
+   The repository provides common CRUD operations and methods for retrieving lists of entities.
+
+   Key Features:
+   - Asynchronous operations for adding, updating, deleting, and saving changes.
+   - Methods for getting lists of entities with or without tracking changes.
+   - Support for pagination and counting total entities.
+
+   Note:
+   - The IdentityDbContext is used as the base context, assuming identity management is integrated into the application.
+*/
+
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

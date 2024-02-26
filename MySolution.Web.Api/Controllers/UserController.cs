@@ -1,4 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+   This controller manages user-related operations.
+   It provides endpoints for CRUD operations on user entities.
+
+   Key Features:
+   - Utilizes IUserServices interface for user management operations.
+   - Requires authorization for accessing any action within this controller.
+*/
+
+using Microsoft.AspNetCore.Mvc;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Services;
 using System.Collections.Generic;

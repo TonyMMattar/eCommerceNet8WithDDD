@@ -1,4 +1,15 @@
-﻿using AutoMapper;
+﻿/*
+   This controller manages operations related to products.
+   Authorization is required for accessing any action within this controller.
+
+   The controller provides the following actions:
+   - ListAsync: Retrieves a paginated list of products along with the total count of products.
+   - GetAsync: Retrieves a specific product by its ID.
+   - AddAsync: Adds a new product.
+   - UpdateAsync: Updates an existing product.
+   - DeleteAsync: Deletes a product by its ID.
+*/
+
 using Microsoft.AspNetCore.Mvc;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Services;
@@ -15,14 +26,12 @@ namespace eCommerce.Web.Api.Controllers
     {
         #region Variables
         private readonly IProductServices _productServices;
-        private readonly IMapper _mapper;
         #endregion
 
         #region Constructors
-        public ProductController(IProductServices productServices, IMapper mapper)
+        public ProductController(IProductServices productServices)
         {
             _productServices = productServices;
-            _mapper = mapper;
         }
         #endregion
 

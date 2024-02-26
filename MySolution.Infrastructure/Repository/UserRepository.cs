@@ -1,4 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿/*
+   This repository class manages database operations related to the User entity.
+   It extends RepositoryBase<User> and implements the IUserRepository interface.
+
+   The repository provides methods for:
+   - Retrieving a list of users.
+   - Retrieving a specific user by its ID.
+   - Retrieving user credentials for authentication.
+
+   Note:
+   - It utilizes Entity Framework Core for data access.
+*/
+
+using Microsoft.EntityFrameworkCore;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Repository;
 using eCommerce.Infrastructure.Context;

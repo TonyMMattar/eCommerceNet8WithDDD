@@ -1,4 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+   This controller handles user authentication through a login endpoint.
+   It generates a JWT token upon successful authentication using provided credentials.
+
+   Key Features:
+   - Accepts HTTP POST requests for user login.
+   - Validates user credentials against the IUserServices interface.
+   - Generates a JWT token containing the user's ID upon successful authentication.
+   - Returns the generated token as part of the response upon successful login.
+
+   Note:
+   - The JWT token expires after 8 hours.
+*/
+
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces.Services;
